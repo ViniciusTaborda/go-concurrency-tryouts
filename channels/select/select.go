@@ -41,9 +41,9 @@ func main() {
 			fmt.Println("Case four: ", s4)
 		default:
 			//Avoiding deadlock
+			close(channelOne)
+			close(channelTwo)
 			break
 		}
 	}
-	close(channelOne)
-	close(channelTwo)
 }
