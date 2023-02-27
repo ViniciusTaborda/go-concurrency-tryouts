@@ -94,7 +94,6 @@ func main() {
 				barbershop.AddClient(fmt.Sprintf("Client #%d", clientId))
 				clientId++
 			}
-
 		}
 	}()
 

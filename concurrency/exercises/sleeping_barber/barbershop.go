@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/fatih/color"
@@ -28,6 +29,7 @@ func (barbershop *Barbershop) Close() {
 
 	close(barbershop.BarberDoneChannel)
 
+	fmt.Println()
 	color.Blue("Barber shop is closed and everyone went home...")
 
 }
